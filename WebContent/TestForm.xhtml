@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>My JSF Login</h:head> 
+<body> 
+	<h:form>
+		First Name: <h:inputText value="#{user.firstName}" title="" /><h:messages for="firstName"/><br/>
+		Last Name: <h:inputText  value="#{user.lastName}" title="" /><h:messages for="lastName"/><br/>
+		<h:commandButton action="#{formController.onSubmit(user)}" value="Submit" /><br/>
+	</h:form>
+	<h:messages/>
+</body> 
+</html>
