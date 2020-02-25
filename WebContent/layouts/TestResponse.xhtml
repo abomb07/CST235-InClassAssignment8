@@ -6,6 +6,7 @@
 
 <h:head></h:head> 
 <h:outputStylesheet library="css" name="style.css"  />
+<h:outputStylesheet library="css" name="table.css"  />
 <h:body> 
 	<!-- Set the Layout and Title for the page -->
 	<ui:composition template="/layouts/commonLayout.xhtml">
@@ -15,7 +16,7 @@
 			Welcome #{user.firstName} #{user.lastName}. Your orders are:<br/>
 			<br/>
 			<h:dataTable 
-				 value="#{orders.orders}" 
+				 value="#{formController.service.orders}" 
 				 var="o" styleClass="order-table"
 				 headerClass="order-table-header" 
 				 rowClasses="order-table-odd-row,order-table-even-row">

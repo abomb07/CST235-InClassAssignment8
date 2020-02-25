@@ -16,8 +16,8 @@
 	<!-- Login Form -->
 	<div align="center"  class="red">
 		<h:form class="form" >
-			 Frist Name:<h:inputText  value="#{user.firstName}" title="" /><h:message for="firstName"/><br/>
-			 Last Name:<h:inputText  value="#{user.lastName}" title="" /><br/>
+			 Frist Name:<h:inputText  value="#{user.firstName}" title="" id="firstName"/><h:message for="firstName"/><br/>
+			 Last Name:<h:inputText  value="#{user.lastName}" title="" id="lastName"/><h:message for="lastName"/><br/>
 			 <h:commandButton action="#{formController.onSubmit(user)}" value="Submit" />
 		</h:form>
 		<h:messages />
