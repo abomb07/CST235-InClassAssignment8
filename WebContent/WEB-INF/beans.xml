@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd">
 
 	<alternatives>
-		<class>business.AnotherOrdersBusinessService</class>
+		<class>business.OrdersBusinessService</class>
 	</alternatives>
 
 </beans>

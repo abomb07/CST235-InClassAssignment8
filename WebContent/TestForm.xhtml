@@ -7,8 +7,8 @@
 <h:head>My JSF Login</h:head> 
 <body> 
 	<h:form>
-		First Name: <h:inputText value="#{user.firstName}" title="" name="firstName"/><h:messages for="firstName"/><br/>
-		Last Name: <h:inputText  value="#{user.lastName}" title="" name="lastName"/><h:messages for="lastName"/><br/>
+		First Name: <h:inputText value="#{user.firstName}" title="" name="firstName" id="firstName"/><h:messages for="firstName"/><br/>
+		Last Name: <h:inputText  value="#{user.lastName}" title="" name="lastName" id="lastName"/><h:messages for="lastName"/><br/>
 		<h:commandButton action="#{formController.onSubmit(user)}" value="Submit" /><br/>
 	</h:form>
 	<h:messages/>
