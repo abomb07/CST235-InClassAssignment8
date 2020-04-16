@@ -37,6 +37,11 @@
 				#{o.quantity}
 			</h:column>
 			</h:dataTable>
+			
+			<h:form>
+				<h:commandButton value="Send Order" action="#{formController.onSendOrder()}"/><br />
+				<h:button value="Login Again" outcome="TestForm.xhtml" />
+			</h:form>
 		</div>
 	</ui:define>
 	</ui:composition>
