@@ -13,7 +13,7 @@
 	<ui:define name="title">JSF Response Page</ui:define>
 	<ui:define name="content">
 		<div align="center">
-			Welcome #{user.firstName} #{user.lastName}. Your orders are:<br/>
+			Welcome #{user.firstName}. Your orders are:<br/>
 			<br/>
 			<h:dataTable 
 				 value="#{formController.service.orders}" 
@@ -40,7 +40,7 @@
 			
 			<h:form>
 				<h:commandButton value="Send Order" action="#{formController.onSendOrder()}"/><br />
-				<h:button value="Login Again" outcome="TestForm.xhtml" />
+				<h:commandButton value="Log Out" action="#{formController.onLogoff()}"/><br />
 			</h:form>
 		</div>
 	</ui:define>

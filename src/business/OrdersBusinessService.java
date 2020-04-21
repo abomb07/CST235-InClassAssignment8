@@ -87,4 +87,16 @@ public class OrdersBusinessService implements OrderBusinessInterface {
 		}
 
 	}
+
+	@Override
+	public Order findOrder(int id) {
+		// TODO Auto-generated method stub
+		return service.findByOrderNo(id);
+	}
+
+	@Override
+	public Order createOrder(Order order) {
+		// TODO Auto-generated method stub
+		return service.create(order);
+	}
 }

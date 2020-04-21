@@ -13,4 +13,6 @@ public interface OrderBusinessInterface
 	public List<Order> getOrders();
 	public void setOrders(List<Order> orders);
 	public void sendOrder(Order order);
+	public Order findOrder(int id);
+	public Order createOrder(Order order);
 }

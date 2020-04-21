@@ -62,4 +62,16 @@ public class AnotherOrdersBusinessService implements OrderBusinessInterface {
 		
 	}
 
+	@Override
+	public Order findOrder(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Order createOrder(Order order) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
